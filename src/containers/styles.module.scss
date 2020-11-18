@@ -1,0 +1,69 @@
+.ant {
+	background: #F3F5FA;
+	min-height: 100vh;
+	padding: 15px;
+	flex-direction: column;
+	align-items: center;
+	display: flex;
+	font-size: 15px;
+
+	&MiddleScaled {
+		font-size: 10px;
+	}
+
+	&VeryScaled {
+		font-size: 6px;
+	}
+}
+
+.row {
+	display: flex;
+	width: fit-content;
+	border: 0.5px solid #888;
+
+	&:not(:first-child) {
+		border-top: 0;
+	}
+
+	&:not(:last-child) {
+		border-bottom: 0;
+	}
+}
+
+.cell {
+	// font-size: 10px;
+	border: 0.5px solid #888;
+	width: 4em;
+	height: 4em;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s filter, .5s transform;
+
+	& svg {
+		width: 80%;
+		height: 80%;
+	}
+
+	&Black {
+		filter: invert(100%);
+	}
+
+
+	&Left {
+		transform: rotate(-90deg);
+	}
+
+	&Right {
+		transform: rotate(90deg);
+	}
+
+	&Down {
+		transform: rotate(180deg);
+	}
+
+	&Up {
+		transform: rotate(0);
+	}
+}

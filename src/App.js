@@ -1,11 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import LangtonAnt from './containers/LangtonAnt';
 import './App.css';
-import { app } from './styles.module.scss';
 
-export default () => {
-  return (
-    <div className={app}>
-      <h1>Hello!!!</h1>
-    </div>
-  );
-}
+const App = () => <LangtonAnt />;
+
+export default App;
